@@ -107,7 +107,7 @@ h2{
     max-width: 400px;
     padding: 1rem;
   }
-}
+
 
 .box img{
   width: 100px;
@@ -140,6 +140,7 @@ h2{
     margin: 0 auto;
     display: block;
     padding: 7px;
+    text-decoration: none;
 }
 
 /*footer*/
