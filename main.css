@@ -1,0 +1,311 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+/*Menú*/
+nav {
+  background: #fff;
+  height: 90px;
+  width: 100%;
+}
+
+.enlace {
+  position: absolute;
+  padding: 20px 50px;
+}
+
+.logo {
+  height: 60px;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 90px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: #3f3f3f;
+  font-size: 18px;
+  padding: 15px 20px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+li a.active, li a:hover {
+  background: #F4EDE7;
+  transition: 0.5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+section {
+  background: url(fondo.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: calc(100vh - 80px);
+}
+
+p {
+  color: #3F3F3F;
+  text-align: center;
+  font-family: Besley;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 140px;
+  padding-right: 140px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/*espiga*/
+.espiga {
+  height: 53px;
+  width: 508px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 2%;
+}
+
+/*h2*/
+h2 {
+  color: #3F3F3F;
+  text-align: center;
+  font-family: Besley;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 3%;
+}
+
+/*Imágenes de productos home*/
+.productos {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+.productos img {
+  max-width: 400px;
+  padding: 1rem;
+}
+
+.box img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.box:nth-child(1) {
+  grid-column-start: span 2;
+}
+
+.box:nth-child(4) {
+  grid-column-start: span 2;
+}
+
+/*botones*/
+.boton {
+  border-radius: 71px;
+  border: none;
+  background: #E3CEC9;
+  width: 504px;
+  height: 50px;
+  color: #3F3F3F;
+  text-align: center;
+  font-family: Besley;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0 auto;
+  display: block;
+  padding: 7px;
+  text-decoration: none;
+}
+
+/*footer*/
+.footer {
+  background-color: #F4EDE7;
+  padding: 10px;
+}
+
+/*Página de nosotros*/
+.nosotros {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  width: 80%;
+  margin: 15px auto;
+}
+.nosotros img {
+  width: 381px;
+  height: 476px;
+}
+
+/*formulario*/
+form {
+  width: 900px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px;
+  border-radius: none;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 15px 10px;
+  margin-bottom: 10px;
+  border: 2px solid #BD9685;
+  border-radius: 37px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+input[type=submit] {
+  background-color: #F4EDE7;
+  color: #3F3F3F;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 37px;
+  cursor: pointer;
+  font-family: barseville;
+  font-weight: bold;
+  font-size: 25 px;
+}
+
+input[type=submit]:hover {
+  background-color: #BF9585;
+  color: white;
+}
+
+/*Imágenes de productos - página de productos*/
+.producto-ind {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+.producto-ind img {
+  max-width: 300px;
+  padding: 1rem;
+}
+
+.box img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.box:nth-child(1) {
+  grid-column-start: span 2;
+}
+
+.box:nth-child(4) {
+  grid-column-start: span 2;
+}
+
+/*Responsive*/
+@media (max-width: 952px) {
+  .enlace {
+    padding-left: 20px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  li a:hover, li a.active {
+    background: none;
+    color: #E3CEC9;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  p {
+    font-size: 14px;
+    padding: 30px;
+    text-align: center;
+  }
+  .espiga {
+    width: 80%;
+    height: 80%;
+  }
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10%;
+  }
+  .boton {
+    width: 80%;
+  }
+  .nosotros {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    padding: 10px;
+  }
+  .nosotros img {
+    width: 181px;
+    height: 276px;
+  }
+  form {
+    width: 400px;
+  }
+}/*# sourceMappingURL=main.css.map */

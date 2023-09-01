@@ -101,12 +101,12 @@ h2{
       display: flex;
     flex-flow: wrap;
     justify-content: center;
+    img{
+        max-width: 400px;
+        padding: 1rem;
+      }
   }
   
-.productos img{
-    max-width: 400px;
-    padding: 1rem;
-  }
 
 
 .box img{
@@ -156,12 +156,13 @@ h2{
   padding: 40px;
   width: 80%;
   margin: 15px auto;
+    
+  img{
+    width: 381px;
+    height: 476px;
+  }
 }
 
-.nosotros img{
-  width: 381px;
-  height: 476px;
-}
 
 /*formulario*/
 form {
@@ -212,13 +213,11 @@ form {
   display: flex;
 flex-flow: wrap;
 justify-content: center;
+    img{
+    max-width: 300px;
+    padding: 1rem;
+    }
 }
-
-.producto-ind img{
-max-width: 300px;
-padding: 1rem;
-}
-
 
 .box img{
 width: 100px;
